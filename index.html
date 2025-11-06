@@ -4,72 +4,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Filippo Bertuzzi - Home Page</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
+
     <style>
-        /* Stile semplice per iniziare */
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
+            /* Font minimalista per il corpo del testo */
+            font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            font-weight: 300; /* Testo più leggero e pulito */
+            line-height: 1.7;
             background-color: #e0f0e3; /* Sfondo verde rugiada */
-            color: #333;
+            color: #424242; /* Grigio scuro morbido invece di nero puro */
             margin: 0;
-            padding: 0;
+            padding: 20px; /* Aggiunto padding per mobile */
         }
         .container {
             max-width: 800px;
             margin: 50px auto;
-            padding: 20px 30px; /* Aumentato padding laterale */
+            padding: 30px 40px; /* Più padding interno */
             background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-radius: 12px; /* Angoli più arrotondati e moderni */
+            box-shadow: 0 4px 25px rgba(0,0,0,0.07); /* Ombra più soffusa */
+        }
+        
+        /* Stile Titoli (Font "Futuristico") */
+        h1, h2, h3 {
+            font-family: 'Titillium Web', sans-serif;
+            color: #2c3e50;
+            font-weight: 600;
+            margin-bottom: 10px;
         }
         h1 {
-            color: #2c3e50;
+            font-size: 2.5em; /* Più grande */
+            font-weight: 700;
+            text-align: center;
             margin-bottom: 5px;
         }
         h2 {
-            color: #2c3e50;
-            border-bottom: 2px solid #e0f0e3; /* Linea divisoria verde */
-            padding-bottom: 5px;
-            margin-top: 30px;
+            font-size: 1.8em;
+            border-bottom: 2px solid #e0f0e3; /* Linea separatrice verde */
+            padding-bottom: 8px;
+            margin-top: 40px; /* Più spazio tra sezioni */
         }
         h3 {
+            font-size: 1.2em;
+            font-weight: 600;
             color: #333;
-            margin-bottom: 5px;
         }
+
         p, li {
-            font-size: 1.0em; /* Dimensione testo CV */
-        }
-        .info {
-            font-style: italic;
-            color: #555;
-            font-size: 0.9em;
-            margin-top: 0;
-        }
-        a {
-            color: #007bff;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
+            font-size: 1.05em;
         }
         ul {
-            padding-left: 20px;
+            list-style-type: none; /* Rimuove i pallini */
+            padding-left: 0;
+        }
+        li {
+            position: relative;
+            padding-left: 25px; /* Spazio per il pallino personalizzato */
+            margin-bottom: 8px;
+        }
+        /* Pallino personalizzato minimalista */
+        li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: #00695c; /* Verde scuro per il pallino */
+            font-size: 1.2em;
+            line-height: 1.05em;
+        }
+
+        /* Stile Link */
+        a {
+            color: #00695c; /* Verde scuro a tema */
+            font-weight: 400; /* Peso uniforme */
+            text-decoration: none;
+            border-bottom: 1px dashed #00695c; /* Sottolineatura minimalista */
+            transition: all 0.2s ease;
+        }
+        a:hover {
+            color: #fff;
+            background-color: #00695c; /* Effetto hover */
+            border-bottom: 1px dashed #00695c;
+        }
+        /* Link speciali (email) */
+        a[href^="mailto:"] {
+            border-bottom-style: solid;
+        }
+
+        /* Classe Info (sottotitoli, date, ecc) */
+        .info {
+            font-family: 'Roboto', sans-serif;
+            font-style: normal; /* Rimosso corsivo per minimalismo */
+            font-weight: 300; /* Molto leggero */
+            color: #757575;
+            font-size: 0.9em;
+            margin-top: -5px;
+        }
+        header .info {
+            text-align: center;
+            font-size: 1.2em;
+            margin-top: 0;
         }
         .job-entry, .edu-entry {
-            margin-bottom: 20px; /* Spazio tra le voci */
+            margin-bottom: 25px;
         }
+
     </style>
 </head>
 <body>
 
     <div class="container">
         
-        <header style="text-align: center;">
+        <header>
             <h1>Filippo Bertuzzi</h1>
-            <p class="info" style="font-size: 1.2em;">Studente</p>
+            <p class="info">Studente</p>
         </header>
-
-        <hr>
 
         <section id="contatti">
             <h2>Contatti</h2>
@@ -80,8 +133,6 @@
                 <li>Indirizzo (BO): Via Risorgimento 2, Zola Predosa (BO)</li>
             </ul>
         </section>
-
-        <hr>
 
         <section id="profilo">
             <h2>Profilo</h2>
@@ -96,8 +147,6 @@
                 Nel tempo libero, gioco a basket nei <a href="https://livescore.csibologna.it/team_details.php?team_id=3321" target="_blank" rel="noopener noreferrer">Bolosgreeners</a>.
             </p>
         </section>
-
-        <hr>
 
         <section id="esperienza">
             <h2>Esperienza</h2>
@@ -115,7 +164,7 @@
             <div class="job-entry">
                 <h3>Studio di amministrazione immobiliare Bucciarelli Eleonora / Collaboratore amministrativo</h3>
                 <p class="info">Dicembre 2022 - Presente | Via Paolo Giovanni Martini 31 (Bo)</p>
-                <p>Collaboratore amministrativo con esperienza maturata all'interno di uno studio specializzato nella gestione immobiliare. Svolgo attività legate all'amministrazione ordinaria e straordinaria di patrimoni immobiliari, occupandomi della redazione di bilanci consuntivi e preventivi, della gestione di pagamenti e incassi, della predisposizione della documentazione contrattuale e del coordinamento con fornitori, locatari e amministratori.</p>
+                <p>Collaboratore amministrativo con esperienza maturata all'interno di uno studio specializzato nella gestione immobiliare. Svolgo attività legate all'amministrazione ordinaria e straordinaria di patrimoni immobiliari...</p>
                 <p>Ottima conoscenza degli strumenti informatici per la contabilità e la gestione documentale, unita a una solida comprensione delle normative civilistiche e fiscali applicabili al settore immobiliare.</p>
             </div>
 
@@ -124,8 +173,6 @@
                 <p class="info">Settembre 2021 - Luglio 2022</p>
             </div>
         </section>
-
-        <hr>
 
         <section id="istruzione">
             <h2>Istruzione</h2>
@@ -147,4 +194,31 @@
             </div>
 
             <div class="edu-entry">
-                <h3>Liceo Classico Marco Minghetti / Diploma
+                <h3>Liceo Classico Marco Minghetti / Diploma</h3>
+                <p class="info">Settembre 2016 - Giugno 2021</p>
+                <p>Diploma di maturità classica.</p>
+            </div>
+        </section>
+
+        <section id="premi">
+            <h2>Premi</h2>
+            <h3>Membro della National Technical Honor Society</h3>
+            <ul>
+                <li>Riconoscimento per meriti accademici ed impegno etico: selezionato per eccellenza nei risultati scolastici, responsabilità personale e integrità professionale.</li>
+                <li>Partecipazione ad una rete internazionale di studenti e professionisti.</li>
+            </ul>
+        </section>
+
+        <section id="lingue">
+            <h2>Lingue</h2>
+            <ul>
+                <li>Italiano - Madrelingua</li>
+                <li>Inglese - C1</li>
+                <li>Tedesco - A2</li>
+            </ul>
+        </section>
+
+    </div>
+
+</body>
+</html>
