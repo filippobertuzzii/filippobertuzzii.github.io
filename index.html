@@ -17,64 +17,134 @@
         .container {
             max-width: 800px;
             margin: 50px auto;
-            padding: 20px;
+            padding: 20px 30px; /* Aumentato padding laterale */
             background-color: #fff;
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
         h1 {
             color: #2c3e50;
+            margin-bottom: 5px;
         }
-        p {
-            font-size: 1.1em;
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #e0f0e3; /* Linea divisoria verde */
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+        h3 {
+            color: #333;
+            margin-bottom: 5px;
+        }
+        p, li {
+            font-size: 1.0em; /* Dimensione testo CV */
         }
         .info {
             font-style: italic;
             color: #555;
+            font-size: 0.9em;
+            margin-top: 0;
         }
         a {
-            color: #007bff; /* Colore standard per i link */
-            text-decoration: none; /* Rimuove la sottolineatura */
+            color: #007bff;
+            text-decoration: none;
         }
         a:hover {
-            text-decoration: underline; /* Aggiunge la sottolineatura al passaggio del mouse */
+            text-decoration: underline;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .job-entry, .edu-entry {
+            margin-bottom: 20px; /* Spazio tra le voci */
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <header>
+        
+        <header style="text-align: center;">
             <h1>Filippo Bertuzzi</h1>
-            <p class="info">Studente di Economia | Bologna, Italia</p>
+            <p class="info" style="font-size: 1.2em;">Studente</p>
         </header>
 
         <hr>
 
-        <section id="about">
-            <h2>Chi Sono</h2>
-            <p>
-                Ciao! Mi chiamo Filippo Bertuzzi e attualmente vivo a Bologna. 
-                Sono uno studente appassionato di Economia, sempre alla ricerca di 
-                nuove conoscenze e sfide. Gioco nei Bolosgreeners, che sono la prima squadra del 
-                <a href="https://livescore.csibologna.it/team_details.php?team_id=3321" target="_blank" rel="noopener noreferrer">campionato</a> di basket.
-            </p>
-            </section>
-
-        <hr>
-
-        <section id="contact">
+        <section id="contatti">
             <h2>Contatti</h2>
-            <p>
-                Puoi trovarmi qui:
-            </p>
             <ul>
-                <li>LinkedIn (da aggiungere)</li>
                 <li>Email: <a href="mailto:fb130602@gmail.com">fb130602@gmail.com</a></li>
+                <li>Telefono: (+39) 388 9816021</li>
+                <li>Indirizzo (MI): Via Macedonio Melloni 6, Mi</li>
+                <li>Indirizzo (BO): Via Risorgimento 2, Zola Predosa (BO)</li>
             </ul>
         </section>
 
-    </div>
+        <hr>
 
-</body>
-</html>
+        <section id="profilo">
+            <h2>Profilo</h2>
+            <p>
+                Sono una persona determinata, con una solida preparazione culturale derivante dal percorso liceale classico e arricchita da esperienze internazionali, tra cui un anno di studio all'estero.
+            </p>
+            <p>
+                Attualmente sto frequentando un corso di laurea triennale in Economia, con l'intento di proseguire la mia formazione attraverso un master internazionale in ambito imprenditoriale e manageriale.
+            </p>
+            <p>
+                Possiedo un'eccellente padronanza della lingua italiana ed inglese, e ambisco a costruire una carriera orientata all'innovazione, alla crescita personale e allo sviluppo di progetti ad alto impatto.
+                Nel tempo libero, gioco a basket nei <a href="https://livescore.csibologna.it/team_details.php?team_id=3321" target="_blank" rel="noopener noreferrer">Bolosgreeners</a>.
+            </p>
+        </section>
+
+        <hr>
+
+        <section id="esperienza">
+            <h2>Esperienza</h2>
+            
+            <div class="job-entry">
+                <h3>PWC / Intern Auditor</h3>
+                <p class="info">Novembre 2024 - Maggio 2025 | Piazza 3 Torri (Mi)</p>
+                <p>Mi occupavo di revisioni contabili per clienti nazionali e internazionali operanti in diversi settori, con particolare attenzione alla conformità normativa e all'analisi dei rischi.</p>
+                <ul>
+                    <li>Sviluppo di competenze analitiche, precisione nei controlli, capacità di lavorare in team strutturati e in ambienti ad alta pressione.</li>
+                    <li>Ottima conoscenza dei principi contabili italiani e internazionali (OIC, IFRS), padronanza dei principali strumenti digitali e spiccata attitudine al problem solving.</li>
+                </ul>
+            </div>
+
+            <div class="job-entry">
+                <h3>Studio di amministrazione immobiliare Bucciarelli Eleonora / Collaboratore amministrativo</h3>
+                <p class="info">Dicembre 2022 - Presente | Via Paolo Giovanni Martini 31 (Bo)</p>
+                <p>Collaboratore amministrativo con esperienza maturata all'interno di uno studio specializzato nella gestione immobiliare. Svolgo attività legate all'amministrazione ordinaria e straordinaria di patrimoni immobiliari, occupandomi della redazione di bilanci consuntivi e preventivi, della gestione di pagamenti e incassi, della predisposizione della documentazione contrattuale e del coordinamento con fornitori, locatari e amministratori.</p>
+                <p>Ottima conoscenza degli strumenti informatici per la contabilità e la gestione documentale, unita a una solida comprensione delle normative civilistiche e fiscali applicabili al settore immobiliare.</p>
+            </div>
+
+            <div class="job-entry">
+                <h3>B+ Café / Rider, Servizio in Sala</h3>
+                <p class="info">Settembre 2021 - Luglio 2022</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="istruzione">
+            <h2>Istruzione</h2>
+
+            <div class="edu-entry">
+                <h3>Università Degli Studi Di Milano / Laurea Triennale</h3>
+                <p class="info">Settembre 2022 - Presente</p>
+                <p>Bachelor degree in business and management con curriculum L18.</p>
+                <ul>
+                    <li>Solida preparazione in economia aziendale e contabilità.</li>
+                    <li>Competenze in management e organizzazione aziendale.</li>
+                    <li>Conoscenze in economia politica e mercati.</li>
+                </ul>
+            </div>
+
+            <div class="edu-entry">
+                <h3>Northwest Highschool / Exchange year</h3>
+                <p class="info">Agosto 2019 - Giugno 2020 | Dallas (tx)</p>
+            </div>
+
+            <div class="edu-entry">
+                <h3>Liceo Classico Marco Minghetti / Diploma
