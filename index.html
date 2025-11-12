@@ -112,13 +112,25 @@
         .job-entry, .edu-entry {
             margin-bottom: 25px;
         }
-
+        /* Stile per l'immagine */
+        .profile-image {
+            display: block;
+            margin: 0 auto 30px auto; /* Centra l'immagine e aggiunge spazio sotto */
+            border-radius: 50%; /* Rende l'immagine circolare */
+            width: 150px; /* Dimensione fissa */
+            height: 150px; /* Dimensione fissa */
+            object-fit: cover; /* Assicura che l'immagine copra bene l'area */
+            border: 4px solid #00695c; /* Bordo colorato */
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Ombra per profondità */
+        }
     </style>
 </head>
 <body>
 
     <div class="container">
         
+        <img src="your_image_url_here" alt="Filippo Bertuzzi" class="profile-image">
+
         <header>
             <h1>Filippo Bertuzzi</h1>
             <p class="info">Studente</p>
